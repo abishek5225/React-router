@@ -6,6 +6,8 @@ import App from './App.jsx'
 import Layout from './components/Layout.jsx'
 import Home from './Pages/Home.jsx'
 import About from './Pages/About.jsx'
+import Notes from './Pages/Notes.jsx'
+import Github from './Pages/Github.jsx'
 import { BrowserRouter, createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter(
@@ -13,6 +15,8 @@ const router = createBrowserRouter(
     <Route path='/' element={<Layout/>}>
       <Route path='' element={<Home />} />
       <Route path='about' element={<About/>}/>
+      <Route path='notes' element={<Notes/>}/>
+      <Route path='github' element={<Github/>}/>
     </Route>
   )
 )
